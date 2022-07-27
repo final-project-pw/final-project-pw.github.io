@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@-webkit-keyframes growIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes growIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animated--grow-in {
+  -webkit-animation-name: growIn;
+          animation-name: growIn;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
+          animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animated--fade-in {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
+          animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
+}
+
+.dropdown .dropdown-menu {
+  font-size: 0.85rem;
+}
+
+.dropdown.no-arrow .dropdown-toggle::after {
+  display: none;
+}
+
+@font-face {
+  font-family: "NotoSansR";
+  src: url("../../assets/font/NotoSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "QuestrialR";
+  src: url("../../assets/font/Questrial-Regular.ttf") format("truetype");
+}
+.font-noto-sans-sc, .navbar-main, footer {
+  font-family: "NotoSansR", sans-serif;
+}
+
+.font-questrial, main {
+  font-family: "QuestrialR", sans-serif;
+}
+
+.navbar-main {
+  background-color: #513592;
+  border-bottom: 1px solid #422f99;
+  box-shadow: 0 0.05rem 0.3rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav-item {
+  margin-left: 0.5rem;
+}
+
+footer {
+  background-color: #3c394d;
+}
+
+.list-custom ul li {
+  list-style: none;
+  position: relative;
+  padding: 3px 0 2px 25px;
+}
+
+.list-custom li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+}
+/*# sourceMappingURL=main.css.map */
